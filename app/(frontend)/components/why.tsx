@@ -1,6 +1,5 @@
 import { Headline } from './headlines';
 import { ImageCard } from './image-card';
-import { TextCard } from './text-card';
 import { WhyCard } from './why-card';
 
 export const Why = () => {

@@ -6,7 +6,6 @@ import {
 import { Headline } from './headlines';
 import { ImageCard } from './image-card';
 import { ReviewCard } from './review-card';
-import { WhyCard } from './why-card';
 
 export const Testimonial = () => {
   return (

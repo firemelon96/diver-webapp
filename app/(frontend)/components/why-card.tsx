@@ -1,10 +1,10 @@
 import { Card } from '@/components/ui/card';
 
-type Props = {
-  count: number;
-  title: string;
-  description: string;
-};
+// type Props = {
+//   count: number;
+//   title: string;
+//   description: string;
+// };
 
 export const WhyCard = () => {
   return (
