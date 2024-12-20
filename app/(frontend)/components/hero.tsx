@@ -1,3 +1,6 @@
+import { Button } from '@/components/ui/button';
+import { Headline } from './headlines';
+
 const Hero = () => {
   return (
     <section className='min-h-screen relative'>
@@ -7,8 +10,24 @@ const Hero = () => {
           backgroundImage: `url(/diver.jpg)`,
         }}
       ></div>
-      <div className='text-2xl flex items-center justify-center w-full text-white font-semibold absolute inset-y-0'>
-        <p>Hero tag line here</p>
+      <div className='flex flex-col items-center justify-center w-full space-y-4 text-white absolute inset-y-0'>
+        <Headline
+          className=''
+          label='Welcome to Website'
+          heading='Dive into Adventure with Us'
+        />
+        <p className='pt-10 max-w-xl text-center'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+
+        <Button
+          variant='secondary'
+          size='lg'
+          className='mt-5 font-semibold rounded-full'
+        >
+          Explore
+        </Button>
       </div>
     </section>
   );
