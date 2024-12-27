@@ -4,26 +4,20 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
 } from '@/components/ui/sheet';
 import { routes } from '@/lib/routes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { BiMenu } from 'react-icons/bi';
-import { useClickAway, useMedia } from 'react-use';
+import { useMedia } from 'react-use';
 
 export const NavBar = () => {
-  // const ref = useRef(null);
   const isMobile = useMedia('(min-width: 430px)', false);
   const [isOpen, setIsOpen] = useState(isMobile);
-  // useClickAway(ref, () => {
-  //   setIsOpen(false);
-  // });
 
   return (
     <header className='px-4 bg-black sticky top-0 z-50 text-white border-b-slate-900 border-b'>
