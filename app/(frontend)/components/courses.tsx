@@ -30,7 +30,7 @@ const courses = [
 
 export const Courses = () => {
   return (
-    <section className='bg-sky-950 py-20 space-y-4'>
+    <section className='bg-sky-950 py-20 space-y-4' id='courses'>
       <Headline
         label='Courses'
         heading='Explore the Depths with Expert Scuba Diving Courses'

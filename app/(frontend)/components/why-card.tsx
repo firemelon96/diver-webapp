@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/card';
 
 export const WhyCard = () => {
   return (
-    <Card className='bg-sky-800 text-white flex items-center justify-center h-full px-7 gap-4'>
+    <Card className='bg-sky-800 text-white flex items-center justify-center h-full px-7 py-4 gap-4'>
       <span className='text-5xl px-5 py-2 bg-blue-500 rounded-full font-semibold'>
         1
       </span>

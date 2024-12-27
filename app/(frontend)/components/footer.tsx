@@ -1,13 +1,15 @@
+import { routes } from '@/lib/routes';
 import Image from 'next/image';
-import { routes } from './nav-bar';
 
 export const Footer = () => {
   return (
     <footer className='bg-blue-950'>
       <section className='container mx-auto py-10'>
-        <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-col md:flex-row text-center items-center md:text-start md:items-start'>
           <div className='flex-1'>
-            <Image src='/logo.png' width={150} height={60} alt='logo' />
+            <div className='flex items-center justify-center md:items-start md:justify-start'>
+              <Image src='/logo.png' width={150} height={60} alt='logo' />
+            </div>
             <p className='text-white'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               officia, deserunt autem accusamus obcaecati tenetur. Tenetur,

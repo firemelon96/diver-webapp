@@ -1,3 +1,4 @@
+'use client';
 import {
   Carousel,
   CarouselContent,
@@ -6,13 +7,16 @@ import {
 import { Headline } from './headlines';
 import { ImageCard } from './image-card';
 import { ReviewCard } from './review-card';
+import AutoPlay from 'embla-carousel-autoplay';
+import { useRef } from 'react';
 
 export const Testimonial = () => {
+  const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
   return (
-    <section className='container mx-auto'>
+    <section className='container mx-auto' id='testimonials'>
       <div className='py-10'>
-        <div className='grid grid-cols-4 gap-4 grid-rows-3 rounded-2xl overflow-hidden'>
-          <div className='row-span-3 col-span-2 bg-red-50'>
+        <div className='grid md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
+          <div className='row-span-3 col-span-2 bg-red-50 h-96 md:h-full'>
             <ImageCard url='/testimonial.jpg' />
           </div>
           <div className='col-span-2 flex flex-col justify-start gap-4'>
@@ -23,7 +27,7 @@ export const Testimonial = () => {
             />
           </div>
           <div className='col-span-2 row-span-2'>
-            <Carousel className=''>
+            <Carousel plugins={[plugin.current]} opts={{ loop: true }}>
               <CarouselContent>
                 {Array.from({ length: 3 }).map((_, i) => (
                   <CarouselItem className='' key={i}>
