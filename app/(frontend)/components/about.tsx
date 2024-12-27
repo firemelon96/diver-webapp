@@ -3,7 +3,7 @@ import { TextCard } from './text-card';
 
 export const About = () => {
   return (
-    <div className='relative' id='about'>
+    <div className='relative scroll-mt-10' id='about'>
       <div className='container mx-auto py-10'>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
           <div className='row-span-2 col-span-2 h-64 md:h-full'>

@@ -8,7 +8,7 @@ import { ServicesCard } from './services-card';
 
 export const Services = () => {
   return (
-    <section className='min-h-screen relative' id='expeditions'>
+    <section className='min-h-screen relative scroll-mt-10' id='expeditions'>
       <div
         className='h-screen w-full z-0 bg-cover bg-center bg-fixed bg-no-repeat'
         style={{

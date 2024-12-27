@@ -3,7 +3,7 @@ import { Headline } from './headlines';
 
 export const Faq = () => {
   return (
-    <section className='bg-sky-50 py-10' id='faqs'>
+    <section className='bg-sky-50 py-10 scroll-mt-10' id='faqs'>
       <div className='container mx-auto space-y-6'>
         <Headline
           label="faq's"

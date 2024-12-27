@@ -13,7 +13,7 @@ import { useRef } from 'react';
 export const Testimonial = () => {
   const plugin = useRef(AutoPlay({ delay: 5000, stopOnInteraction: false }));
   return (
-    <section className='container mx-auto' id='testimonials'>
+    <section className='container mx-auto scroll-mt-10' id='testimonials'>
       <div className='py-10'>
         <div className='grid md:grid-cols-4 gap-4 md:grid-rows-3 rounded-2xl overflow-hidden'>
           <div className='row-span-3 col-span-2 bg-red-50 h-96 md:h-full'>
