@@ -1,14 +1,18 @@
 import Image from 'next/image';
 
-export const ImageCard = () => {
+type Props = {
+  url: string;
+};
+
+export const ImageCard = ({ url }: Props) => {
   return (
-    <div className='p-0'>
+    <div className='p-0 h-full overflow-hidden rounded-md relative'>
       <Image
-        src='/enriched.webp'
-        width={1000}
-        height={800}
+        src={url}
+        width={1200}
+        height={1800}
         alt='Diver'
-        className='overflow-hidden rounded-md relative'
+        className='object-fill object-center'
       />
     </div>
   );

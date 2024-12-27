@@ -13,7 +13,7 @@ const Hero = () => {
       <div className='flex flex-col items-center justify-center w-full space-y-4 text-white absolute inset-y-0'>
         <Headline
           className=''
-          label='Welcome to Website'
+          label='Welcome to All In Travel'
           heading='Dive into Adventure with Us'
         />
         <p className='pt-10 max-w-xl text-center'>
@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
 
         <Button
-          variant='secondary'
+          variant='primary'
           size='lg'
           className='mt-5 font-semibold rounded-full'
         >

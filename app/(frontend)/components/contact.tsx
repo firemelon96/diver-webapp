@@ -13,8 +13,8 @@ export const Contact = () => {
       ></div>
       <div className='flex flex-col items-center justify-center w-full space-y-4 text-white absolute inset-y-0'>
         <Headline
-          label='Welcome to Website'
-          heading='Dive into Adventure with Us'
+          label='Contact us'
+          heading='Start Your Journey with Us Today'
         />
         <p className='max-w-xl text-center'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit

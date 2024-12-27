@@ -8,7 +8,7 @@ export const Why = () => {
       <div className='py-10'>
         <div className='grid grid-cols-4 gap-4 grid-rows-3 rounded-2xl overflow-hidden'>
           <div className='row-span-2 col-span-2 '>
-            <ImageCard />
+            <ImageCard url='/chill-diver.jpg' />
           </div>
           <div className='col-span-2 flex flex-col justify-start gap-4'>
             <WhyCard />

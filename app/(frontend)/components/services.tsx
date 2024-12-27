@@ -11,7 +11,10 @@ export const Services = () => {
         }}
       ></div>
       <div className='flex items-center justify-center gap-6 w-full absolute inset-y-0 flex-col'>
-        <Headline label='Services' heading='Explore Our Dive Programs' />
+        <Headline
+          label='Expeditions'
+          heading='Explore Our Expeditions Programs'
+        />
         <div className='flex gap-6'>
           {Array.from({ length: 4 }).map((_, i) => (
             <ServicesCard key={i} />

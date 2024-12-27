@@ -4,7 +4,7 @@ import { AvatarFallback } from '@/components/ui/avatar';
 
 export const ReviewCard = () => {
   return (
-    <Card className='p-4 h-56 flex gap-4 flex-col justify-between bg-sky-950 text-white'>
+    <Card className='p-4 h-64 flex gap-4 flex-col justify-between bg-sky-950 text-white'>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
         luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor

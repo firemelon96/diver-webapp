@@ -1,10 +1,15 @@
 import { Card } from '@/components/ui/card';
 
-export const TextCard = () => {
+type Props = {
+  count: number;
+  label: string;
+};
+
+export const TextCard = ({ count, label }: Props) => {
   return (
     <Card className='bg-sky-800 text-white flex items-center justify-center h-full flex-col'>
-      <p className='text-xl font-bold'>1,900</p>
-      <span>Clients</span>
+      <p className='text-3xl font-bold'>{count}</p>
+      <span>{label}</span>
     </Card>
   );
 };
