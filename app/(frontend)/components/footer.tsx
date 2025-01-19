@@ -1,4 +1,4 @@
-import { routes } from '@/lib/routes';
+import { menuItems } from '@/lib/routes';
 import Image from 'next/image';
 
 export const Footer = () => {
@@ -20,8 +20,8 @@ export const Footer = () => {
           <div className='w-1/4 flex flex-col items-center'>
             <h4 className='text-2xl text-sky-600'>Important links</h4>
             <ul className='text-white'>
-              {routes.map((route) => (
-                <li key={route.link}>{route.label}</li>
+              {menuItems.map((route) => (
+                <li key={route.href}>{route.name}</li>
               ))}
             </ul>
           </div>
